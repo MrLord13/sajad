@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem id="sajad_menu_root"
+              name="ساختمان سجاد"
+              web_icon="sajad,static/description/baseApp.png"
+              sequence="0"/>
+    <menuitem id="sajad_dore_menu"
+              name="دوره / ماه"
+              parent="sajad_menu_root"
+              action=""
+              sequence="199"/>
+    <menuitem id="sajad_tarakonesh_menu"
+              name="تراکنش"
+              parent="sajad_menu_root"
+              action=""
+              sequence="200"/>
+    <menuitem id="sajad_mostajer_menu"
+              name="مستاجر"
+              parent="sajad_menu_root"
+              action="sajad_mostajer_action"
+              sequence="201"/>
+    <menuitem id="sajad_sandogh_menu"
+              name="صندوق"
+              parent="sajad_menu_root"
+              action=""
+              sequence="202"/>
+</odoo>
