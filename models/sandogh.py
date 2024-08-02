@@ -5,4 +5,7 @@ class SajadSandogh(models.Model):
     _name = 'sajad.sandogh'
     _description = 'صندوق'
 
-    name = fields.Char()
+    name = fields.Char(string='صندوق')
+    mojodi_kol = fields.Char(string='موجودی کل')
+    con_tarakonesh = fields.One2many('sajad.tarakonesh', 'con_sandogh', string='تراکنش')
+
