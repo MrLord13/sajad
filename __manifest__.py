@@ -16,6 +16,7 @@
         'views/sandogh.xml',
         'views/tarakonesh.xml',
         'views/month.xml',
+        'views/menu.xml',
     ],
     'sequence': -100,
     'application': True,
