@@ -12,6 +12,10 @@
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
+        'views/mostajer.xml',
+        'views/sandogh.xml',
+        'views/tarakonesh.xml',
+        'views/month.xml',
     ],
     'sequence': -100,
     'application': True,

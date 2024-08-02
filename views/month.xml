@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sajad_month_tree" model="ir.ui.view">
+        <field name="name">sajad.month.tree</field>
+        <field name="model">sajad.month</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="month"/>
+                <field name="tarikh_shoro"/>
+                <field name="tarikh_payan"/>
+            </tree>
+        </field>
+    </record>
+    <record id="sajad_month_form" model="ir.ui.view">
+        <field name="name">sajad.month.form</field>
+        <field name="model">sajad.month</field>
+        <field name="arch" type="xml">
+            <form class="meshkat">
+                <sheet>
+                    <div class="row d-flex justify-content-center align-items-center p-2">
+                        <div class="col-6 mshkt_block">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label" for="name"></label>
+                                <div class="col-sm-8 field-char">
+                                    <field name="name"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mshkt_block">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label" for="month"></label>
+                                <div class="col-sm-8 field-char">
+                                    <field name="month"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mshkt_block">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label" for="tarikh_shoro"></label>
+                                <div class="col-sm-8 field-char">
+                                    <field name="tarikh_shoro"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mshkt_block">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label" for="tarikh_payan"></label>
+                                <div class="col-sm-8 field-char">
+                                    <field name="tarikh_payan"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mshkt_block">
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="con_tarakonesh"></label>
+                                <div class="col-sm-10 field-char">
+                                    <field name="con_tarakonesh"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="sajad_month_action" model="ir.actions.act_window">
+        <field name="name">دوره / ماه</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sajad.month</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

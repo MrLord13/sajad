@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sajad_sandogh_tree" model="ir.ui.view">
+        <field name="name">sajad.sandogh.tree</field>
+        <field name="model">sajad.sandogh</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="mojodi_kol"/>
+                <field name="mojodi_kart"/>
+            </tree>
+        </field>
+    </record>
+    <record id="sajad_sandogh_form" model="ir.ui.view">
+        <field name="name">sajad.sandogh.form</field>
+        <field name="model">sajad.sandogh</field>
+        <field name="arch" type="xml">
+            <form class="meshkat">
+                <sheet>
+                    <div class="row d-flex justify-content-center align-items-center p-2">
+                        <div class="col-6 mshkt_block">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label" for="name"></label>
+                                <div class="col-sm-8 field-char">
+                                    <field name="name"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mshkt_block">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label" for="mojodi_kol"></label>
+                                <div class="col-sm-8 field-char">
+                                    <field name="mojodi_kol"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mshkt_block">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label" for="mojodi_kart"></label>
+                                <div class="col-sm-8 field-char">
+                                    <field name="mojodi_kart"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="sajad_sandogh_action" model="ir.actions.act_window">
+        <field name="name">صندوق</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sajad.sandogh</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

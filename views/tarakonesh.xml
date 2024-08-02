@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="sajad_mostajer_tree" model="ir.ui.view">
-        <field name="name">sajad.mostajer.tree</field>
-        <field name="model">sajad.mostajer</field>
+    <record id="sajad_tarakonesh_tree" model="ir.ui.view">
+        <field name="name">sajad.tarakonesh.tree</field>
+        <field name="model">sajad.tarakonesh</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
-                <field name="full_name"/>
-                <field name="nam"/>
-                <field name="nam_khanevadegi"/>
-                <field name="metraj"/>
-                <field name="parking"/>
-                <field name="phone1"/>
-                <field name="phone2"/>
+                <field name="con_mostajer"/>
+                <field name="con_month"/>
+                <field name="noe_tarakonesh"/>
+                <field name="elat_tarakonesh"/>
+                <field name="mablagh"/>
+                <field name="tarikh_tarakonesh"/>
             </tree>
         </field>
     </record>
-    <record id="sajad_mostajer_form" model="ir.ui.view">
-        <field name="name">sajad.mostajer.form</field>
-        <field name="model">sajad.mostajer</field>
+    <record id="sajad_tarakonesh_form" model="ir.ui.view">
+        <field name="name">sajad.tarakonesh.form</field>
+        <field name="model">sajad.tarakonesh</field>
         <field name="arch" type="xml">
             <form class="meshkat">
                 <sheet>
@@ -33,57 +32,65 @@
                         </div>
                         <div class="col-6 mshkt_block">
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label" for="full_name"></label>
+                                <label class="col-sm-4 col-form-label" for="con_mostajer"></label>
                                 <div class="col-sm-8 field-char">
-                                    <field name="full_name"/>
+                                    <field name="con_mostajer"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 mshkt_block">
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label" for="nam"></label>
+                                <label class="col-sm-4 col-form-label" for="con_month"></label>
                                 <div class="col-sm-8 field-char">
-                                    <field name="nam"/>
+                                    <field name="con_month"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 mshkt_block">
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label" for="nam_khanevadegi"></label>
+                                <label class="col-sm-4 col-form-label" for="con_sandogh"></label>
                                 <div class="col-sm-8 field-char">
-                                    <field name="nam_khanevadegi"/>
+                                    <field name="con_sandogh"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 mshkt_block">
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label" for="phone1"></label>
+                                <label class="col-sm-4 col-form-label" for="noe_tarakonesh"></label>
                                 <div class="col-sm-8 field-char">
-                                    <field name="phone1"/>
+                                    <field name="noe_tarakonesh"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 mshkt_block">
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label" for="phone2"></label>
+                                <label class="col-sm-4 col-form-label" for="elat_tarakonesh"></label>
                                 <div class="col-sm-8 field-char">
-                                    <field name="phone2"/>
+                                    <field name="elat_tarakonesh"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 mshkt_block">
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label" for="metraj"></label>
+                                <label class="col-sm-4 col-form-label" for="mablagh"></label>
                                 <div class="col-sm-8 field-char">
-                                    <field name="metraj"/>
+                                    <field name="mablagh"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 mshkt_block">
                             <div class="form-group row">
-                                <label class="col-sm-4 col-form-label" for="parking"></label>
+                                <label class="col-sm-4 col-form-label" for="tarikh_tarakonesh"></label>
                                 <div class="col-sm-8 field-char">
-                                    <field name="parking" widget="boolean_toggle"/>
+                                    <field name="tarikh_tarakonesh"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mshkt_block">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label" for="peyvast"></label>
+                                <div class="col-sm-8 field-char">
+                                    <field name="peyvast"/>
                                 </div>
                             </div>
                         </div>
@@ -95,23 +102,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 mshkt_block">
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label" for="con_tarakonesh"></label>
-                                <div class="col-sm-10 field-char">
-                                    <field name="con_tarakonesh"/>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </sheet>
             </form>
         </field>
     </record>
-    <record id="sajad_mostajer_action" model="ir.actions.act_window">
-        <field name="name">مستاجر</field>
+    <record id="sajad_tarakonesh_action" model="ir.actions.act_window">
+        <field name="name">تراکنش</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">sajad.mostajer</field>
+        <field name="res_model">sajad.tarakonesh</field>
         <field name="view_mode">tree,form</field>
     </record>
 
