@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sajad_sandogh_admin,دسترسی کامل ادمین به مدل صندوق,model_sajad_sandogh,sajad.admin_sajad_group,1,1,1,1
+access_sajad_mostajer_admin,دسترسی کامل ادمین به مدل مستاجر,model_sajad_mostajer,sajad.admin_sajad_group,1,1,1,1
+access_sajad_month_admin,دسترسی کامل ادمین به مدل دوره و ماه,model_sajad_month,sajad.admin_sajad_group,1,1,1,1
+access_sajad_tarakonesh_admin,دسترسی کامل ادمین به مدل تراکنش,model_sajad_tarakonesh,sajad.admin_sajad_group,1,1,1,1
+
+access_sajad_sandogh_user,دسترسی خواندن کاربر به مدل صندوق,model_sajad_sandogh,sajad.user_sajad_group,1,0,0,0
+access_sajad_mostajer_user,دسترسی خواندن کاربر به مدل مستاجر,model_sajad_mostajer,sajad.user_sajad_group,1,0,0,0
+access_sajad_month_user,دسترسی خواندن کاربر به مدل دوره و ماه,model_sajad_month,sajad.user_sajad_group,1,0,0,0
+access_sajad_tarakonesh_user,دسترسی خواندن کاربر به مدل تراکنش,model_sajad_tarakonesh,sajad.user_sajad_group,1,0,0,0
