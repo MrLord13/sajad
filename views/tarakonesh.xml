@@ -47,12 +47,7 @@
                             </div>
                         </div>
                         <div class="col-6 mshkt_block">
-                            <div class="form-group row">
-                                <label class="col-sm-4 col-form-label" for="con_sandogh"></label>
-                                <div class="col-sm-8 field-char">
-                                    <field name="con_sandogh"/>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="col-6 mshkt_block">
                             <div class="form-group row">

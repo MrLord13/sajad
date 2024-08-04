@@ -8,9 +8,8 @@ class SajadTarakonesh(models.Model):
     name = fields.Char(string='عنوان تراکنش')
     con_mostajer = fields.Many2one('sajad.mostajer', string='مستاجر')
     con_month = fields.Many2one('sajad.month', string='دوره')
-    con_sandogh = fields.Many2one('sajad.sandogh', string='صندوق')
     noe_tarakonesh = fields.Selection([
-        ('pardakht', 'پرداخت'),
+        ('variz', 'واریز'),
         ('bardasht', 'برداشت'),
     ], string="نوع تراکنش")
     elat_tarakonesh = fields.Char(string='علت تراکنش')

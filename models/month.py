@@ -24,3 +24,16 @@ class SajadMonth(models.Model):
         ('esfand', 'اسفند'),
     ], string="ماه")
     year = fields.Char(string='سال')
+    con_sandogh = fields.Many2one('sajad.sandogh', string='صندوق')
+    miangin_dore = fields.Char(string='میانگین حساب دوره', compute='_compute_miangin_dore')
+
+    @api.depends('con_tarakonesh')
+    def _compute_miangin_dore(self):
+        for rec in self:
+            miangin_dore = 0
+            for tarakonesh in rec.con_tarakonesh:
+                if tarakonesh.noe_tarakonesh == 'variz':
+                    miangin_dore += int(tarakonesh.mablagh)
+                else:
+                    miangin_dore -= int(tarakonesh.mablagh)
+            rec.miangin_dore = miangin_dore
