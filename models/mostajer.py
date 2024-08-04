@@ -16,6 +16,7 @@ class SajadMostajer(models.Model):
         ('shast', 'واحد 60 متری'),
         ('chehel', 'واحد 40 متری'),
     ], string="متراژ")
+    shomare_kart = fields.Char(string='شماره کارت')
     tozihat = fields.Text('توضیحات تکمیلی')
     full_name = fields.Char(string='نام و نام خانوادگی', compute='_compute_namayesh_kamel_nam', index=True, store=True)
 

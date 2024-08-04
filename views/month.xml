@@ -28,10 +28,20 @@
                             </div>
                         </div>
                         <div class="col-6 mshkt_block">
+                        </div>
+                        <div class="col-6 mshkt_block">
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label" for="month"></label>
                                 <div class="col-sm-8 field-char">
                                     <field name="month"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mshkt_block">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label" for="year"></label>
+                                <div class="col-sm-8 field-char">
+                                    <field name="year"/>
                                 </div>
                             </div>
                         </div>

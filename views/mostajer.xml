@@ -10,7 +10,7 @@
                 <field name="nam"/>
                 <field name="nam_khanevadegi"/>
                 <field name="metraj"/>
-                <field name="parking"/>
+                <field name="parking" widget="boolean_toggle"/>
                 <field name="phone1"/>
                 <field name="phone2"/>
             </tree>
@@ -86,6 +86,17 @@
                                     <field name="parking" widget="boolean_toggle"/>
                                 </div>
                             </div>
+                        </div>
+                         <div class="col-6 mshkt_block">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label" for="shomare_kart"></label>
+                                <div class="col-sm-8 field-char">
+                                    <field name="shomare_kart"/>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-6 mshkt_block">
+
                         </div>
                         <div class="col-12 mshkt_block">
                             <div class="form-group row">

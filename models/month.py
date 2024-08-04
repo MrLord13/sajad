@@ -23,3 +23,4 @@ class SajadMonth(models.Model):
         ('bahman', 'بهمن'),
         ('esfand', 'اسفند'),
     ], string="ماه")
+    year = fields.Char(string='سال')
